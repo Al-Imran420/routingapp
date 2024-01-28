@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+}
+
+.row{
+   display: flex;
+   flex-direction: row;
+   flex-wrap:wrap
+}
+.sidebar{
+   width: 250px;
+}
+.outlet{
+   width: 100%;
+   flex: 1;
+}
+
+.active{
+   background-color: #1572a0 !important;
+   color: #ffffff !important;
+}
+.activeSidebar{
+   background-color: #1572a0 !important;
+   color: #ffffff !important;
+}
+.pagetitle{
+   padding: 20px;
+   margin-top: 30px;
+   p{
+      font-size: 30px;
+   }
+}
+
+// varticle nav
+.varticle-nav{
+   padding: 20px;
+}
+.varticle-nav li{
+   list-style: none;
+   display: grid;
+}
+.varticle-nav li a{
+   text-decoration: none;
+   padding: 10px;
+   background-color: #bdbdbd;
+   color: #333333;
+   text-align: center;
+}
+.varticle-nav li:first-child a{
+   border-radius: 20px 20px 0 0;
+}
+.varticle-nav li:last-child a{
+   border-radius: 0 0 20px 20px;
+}
+
+// horizontal nav
+
+
+.horizontal-nav{
+   padding: 20px;
+}
+.horizontal-nav li{
+   list-style: none;
+   display: inline;
+}
+.horizontal-nav li a{
+   text-decoration: none;
+   padding: 10px 30px;
+   background-color: #bdbdbd;
+   color: #333333;
+   text-align: center;
+}
+.horizontal-nav li:first-child a{
+   border-radius: 20px 0 0 20px;
+}
+.horizontal-nav li:last-child a{
+   border-radius: 0 20px 20px 0;
+}
+.horizontal-outlet{
+   width: 100%;
+   margin-top: 20px;
+}
